@@ -2,13 +2,25 @@
 #   Programming Assignment 10
 #     Prob-3.py
 
-# <YOUR NAME>
+# <Tyler Johnson>
 
 def main():
-    # your code here
-
-    # do not change the while loop definition below
+    
+    
+    number = -1
+    while number <0.0:
+        x = float(input("Enter a positive number to begin program: "))
+        if x >= 0.0:
+            break
+    
+    sum = 0.0 
     while True:
-        # your code here
+        x = float(input("Enter a positive number to be added (negative to quit): "))
+        if x >= 0.0:
+            sum = sum + x
+        else:   
+            break
+         
+    print("This is the sum of numbers enterered: ",sum)
 
 main()    
